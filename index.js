@@ -33,4 +33,8 @@ document.getElementById('click').style.border = 'blue .5em solid'
 
 document.querySelector('.main_box').style.border = 'red 2em solid'
 
-document.querySelector('.main_box').style.margin = '1em'
+// document.querySelectorAll('.main_box').style.margin = '1em'
+
+var elems = document.querySelectorAll('.main_box')
+
+console.log(elems)
