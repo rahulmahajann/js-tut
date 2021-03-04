@@ -52,7 +52,18 @@ console.log(elems[1].innerText);
 var newelem = document.createElement('h1')
 newelem.innerText = 'this is a dynamic heading'
 
+// replacing,adding,removing child in div's
 elems[1].appendChild(newelem)
 
 newelem.style.margin = '1em 1em'
 newelem.classList.add('main_bg')
+
+var newelem2 = document.createElement('p')
+newelem2.innerText = 'this is a dynamic para'
+
+elems[1].replaceChild(newelem2,newelem)
+
+newelem2.style.margin = '1em 1em'
+newelem2.classList.add('main_bg')
+
+elems[1].removeChild(newelem2)
