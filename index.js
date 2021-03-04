@@ -24,3 +24,13 @@ for(i=0;i<arr.length;i++){
 
 // DOM MANIPULATION
 
+document    //this shows the current document and help us to access it's elements!
+document.location   //this shows everything from host to location of the document
+
+document.querySelector('#click').style.border = 'blue 5em solid'
+
+document.getElementById('click').style.border = 'blue .5em solid'
+
+document.querySelector('.main_box').style.border = 'red 2em solid'
+
+document.querySelector('.main_box').style.margin = '1em'
