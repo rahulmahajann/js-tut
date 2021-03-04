@@ -67,3 +67,30 @@ newelem2.style.margin = '1em 1em'
 newelem2.classList.add('main_bg')
 
 elems[1].removeChild(newelem2)
+
+// EVENTS in JS
+
+elems[1].addEventListener('click',function(){
+    console.log('box was clicked');
+})
+
+elems[0].addEventListener('mouseover',function(){
+    console.log('mouse on box');
+})
+
+elems[0].addEventListener('mouseout',function(){
+    console.log('mouse not on box');
+
+})
+
+// changing the text of the container when it is clicked!
+
+var prevhtml = elems[1].innerText
+
+elems[1].addEventListener('mousedown',function(){
+    elems[1].innerText = 'this is rahul mahajan a developer'
+})
+
+elems[1].addEventListener('mouseup',function(){
+    elems[1].innerText = prevhtml
+})
