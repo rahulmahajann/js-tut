@@ -40,5 +40,19 @@ elems[1].style.background = 'pink'
 elems[1].style.border = '.5em green solid'
 elems[1].style.margin = '2em auto'
 
-// adding class to an existing class
+// adding&removing class to an existing class
 elems[0].classList.add('main_bg')
+elems[0].classList.remove('main_bg')
+
+// how to get inner content of any container/para/heading etc.
+console.log(elems[1].innerHTML);
+console.log(elems[1].innerText);
+
+// how to create a dynamic element using js
+var newelem = document.createElement('h1')
+newelem.innerText = 'this is a dynamic heading'
+
+elems[1].appendChild(newelem)
+
+newelem.style.margin = '1em 1em'
+newelem.classList.add('main_bg')
