@@ -33,8 +33,12 @@ document.getElementById('click').style.border = 'blue .5em solid'
 
 document.querySelector('.main_box').style.border = 'red 2em solid'
 
-// document.querySelectorAll('.main_box').style.margin = '1em'
-
 var elems = document.querySelectorAll('.main_box')
-
 console.log(elems)
+
+elems[1].style.background = 'pink'
+elems[1].style.border = '.5em green solid'
+elems[1].style.margin = '2em auto'
+
+// adding class to an existing class
+elems[0].classList.add('main_bg')
