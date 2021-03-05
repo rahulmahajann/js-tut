@@ -133,8 +133,16 @@ logkro = ()=>{
 }
 
 setTimeout(logkia,5000)
+
+// clearInterval as well as clearTimeout
+
 new_id = setInterval(logkro,2500)
 
 // let say, setInterval is returning an id if we pass that id to the clearInterval then the task gets stop!
 clearInterval(new_id)    //   --> this is used to stop the setInterval function
+
+// & same with clearTimeout to cancel setInterval
+
+
+// Local Storage
 
