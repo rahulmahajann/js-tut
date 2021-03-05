@@ -83,9 +83,20 @@ elems[0].addEventListener('mouseout',function(){
 
 })
 
-// changing the text of the container when it is clicked!
-
 var prevhtml = elems[1].innerText
+
+
+// changing the text of the container when mouse is hovered over it!
+
+elems[1].addEventListener('mouseover',function(){
+    elems[1].innerText = 'this is rahul mahajan a developer'
+})
+
+elems[1].addEventListener('mouseout',function(){
+    elems[1].innerText = prevhtml
+})
+
+// changing the text of the container when it is clicked!
 
 elems[1].addEventListener('mousedown',function(){
     elems[1].innerText = 'this is rahul mahajan a developer'
@@ -94,3 +105,36 @@ elems[1].addEventListener('mousedown',function(){
 elems[1].addEventListener('mouseup',function(){
     elems[1].innerText = prevhtml
 })
+
+// Arrow Function
+
+function sum(a,b){      //normal function
+    return a+b
+}
+
+sum = (a,b)=>{      //arrow function
+    return a+b
+}
+
+console.log(sum(2,10));
+
+// SetTimeOut and SetInterval
+
+// SetTimeOut --> it is used to perform a task after a specific duration
+// SetInterval --> it is used to perform a task repeatedly with a interval of fixed duration
+
+logkia = ()=>{
+    elems[1].innerText = 'this is a log statement'
+    console.log('this is a log statement');
+}
+
+logkro = ()=>{
+    console.log('interval wala function chla');
+}
+
+setTimeout(logkia,5000)
+new_id = setInterval(logkro,2500)
+
+// let say, setInterval is returning an id if we pass that id to the clearInterval then the task gets stop!
+clearInterval(new_id)    //   --> this is used to stop the setInterval function
+
